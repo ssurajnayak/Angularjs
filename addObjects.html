@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="addObjectsModule"> <!--Specifying name of module in ng-app-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Styles/StyleSheet.css" rel="stylesheet" />
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/addObjects.js"></script>
+    <title>Angular</title>
+</head>
+<body>
+    <div ng-controller="addObjectsController"> <!--Specifying name of controller in ng-controller-->
+        <div>
+            {{message}}
+        </div>
+        <div>
+            Firstname: {{employee.firstName}} <!--Accessing employee object and its properties-->
+        </div>
+        <div>
+            Lastname: {{employee.lastName}}
+        </div>
+        <div>
+            Gender: {{employee.gender}}
+        </div>
+    </div>
+</body>
+</html>
